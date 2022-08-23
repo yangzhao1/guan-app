@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/match_wrap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/ten_dp_margin"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_commodity_list_icon"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/ic_default"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <LinearLayout
+            style="@style/match_match_vertical"
+            android:layout_marginLeft="@dimen/twelve_dp_margin">
+
+            <TextView
+                android:id="@+id/tv_commodity_list_title"
+                style="@style/style_invitation_list_item_title"
+                android:text="led客厅灯 中式吸顶灯长方形卧室灯具套餐 洛神 三室二厅A 时尚简约风..." />
+
+            <TextView
+                android:id="@+id/tv_commodity_list_price"
+                style="@style/style_invitation_list_item_title"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="￥登入可见"
+                android:textColor="@color/red_color" />
+
+            <LinearLayout
+                style="@style/match_wrap_horizontal"
+                android:layout_marginBottom="@dimen/ten_dp_margin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_commodity_list_type_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home_commodity_tag"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="自营"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/font_10_size" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_list_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/twelve_dp_margin"
+                    android:text="销量47852件"
+                    android:textColor="@color/invitation_content"
+                    android:textSize="@dimen/font_12_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/twelve_dp_margin"
+                android:background="@color/invitation_divider" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EmptyTheme"></style>
+
+    <!-- 防止欢迎页白屏或者黑屏，设置图片 -->
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/splash_layer</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Transparent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/black_transparent_50</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+
+    <style name="mainPageStyle" parent="My.Translucent">
+        <item name="android:windowTitleSize">44px</item>
+        <item name="android:cacheColorHint">#000000</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="childPageStyle" parent="My.Translucent">
+        <item name="android:windowTitleSize">44px</item>
+        <item name="android:cacheColorHint">#000000</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="My.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/loadShowAnimation</item>
+    </style>
+
+    <style name="share_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/bottomShowAnimation</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogScale" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/dialogScaleAnimation</item>
+    </style>
+
+    <style name="dialog_share_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/bottomShowAnimation</item>
+    </style>
+
+    <style name="dialog_show_place_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/bottomShowAnimation</item>
+    </style>
+
+    <style name="category_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/topShowAnimation</item>
+    </style>
+
+    <style name="UserGuideDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/dialogScaleAnimation</item>
+    </style>
+
+    <style name="drawerlayoutStyle" parent="childPageStyle">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!--<style name="drawerlayoutStyle" parent="My.Translucent">-->
+    <!--<item name="android:windowTitleSize">44px</item>-->
+    <!--<item name="android:cacheColorHint">#000000</item>-->
+    <!--<item name="android:colorForeground">#fff</item>-->
+    <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--<item name="colorPrimary">@color/white_color</item>-->
+    <!--</style>-->
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrap_wrap">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_menu_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_menu_message"
+            style="@style/style_menu_popup_tv"
+            android:drawableLeft="@drawable/ic_menu_message"
+            android:text="消息" />
+
+        <View style="@style/style_menu_popup_v" />
+
+        <TextView
+            android:id="@+id/tv_menu_home"
+            style="@style/style_menu_popup_tv"
+            android:drawableLeft="@drawable/ic_menu_home"
+            android:text="首页" />
+
+        <View style="@style/style_menu_popup_v" />
+
+        <TextView
+            android:id="@+id/tv_menu_search"
+            style="@style/style_menu_popup_tv"
+            android:drawableLeft="@drawable/ic_menu_search"
+            android:text="搜索" />
+
+        <View style="@style/style_menu_popup_v" />
+
+        <TextView
+            android:id="@+id/tv_menu_attention"
+            style="@style/style_menu_popup_tv"
+            android:drawableLeft="@drawable/ic_menu_attention"
+            android:text="我的关注" />
+
+    </LinearLayout>
+</FrameLayout>

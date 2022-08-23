@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.submeter.android.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_match_vertical"
+    android:background="@color/white_color"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <com.submeter.android.view.BannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:auto_play="true"
+        android:layout_margin="@dimen/ten_dp_margin"
+        app:indicator_checked="@drawable/select_banner_dot"
+        app:indicator_normal="@drawable/unselect_banner_dot"
+        app:interval="2000"/>
+
+    <com.submeter.android.view.CommonFilterLayout
+        android:id="@+id/commonFilterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        style="@style/match_match"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/srl_header"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/srl_footer"
+            style="@style/match_wrap"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</com.submeter.android.view.MyLinearLayout>

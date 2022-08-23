@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_page_background"
+    android:orientation="horizontal">
+
+    <ListView
+        android:id="@+id/category_view"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/category_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:paddingBottom="20dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_page_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white_color"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/title_color"/>
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择企业"
+            android:layout_marginLeft="@dimen/dp_10"
+            style="@style/style_black_15"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态统计"
+            android:padding="@dimen/dp_10"
+            style="@style/style_black_15"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:id="@+id/allC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                style="@style/style_black_15"/>
+            <TextView
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="@dimen/dp_10"
+                android:drawableLeft="@mipmap/normal"
+                android:drawablePadding="@dimen/dp_10"
+                style="@style/style_black_15"/>
+
+            <TextView
+                android:id="@+id/abnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="@dimen/dp_10"
+                android:drawableLeft="@mipmap/precess"
+                android:drawablePadding="@dimen/dp_10"
+                style="@style/style_black_15"/>
+
+            <TextView
+                android:id="@+id/stoppage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="@dimen/dp_10"
+                android:drawableLeft="@mipmap/out"
+                android:drawablePadding="@dimen/dp_10"
+                style="@style/style_black_15"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

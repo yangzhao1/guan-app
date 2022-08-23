@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.submeter.android.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rt_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_page_background"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statusbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/return_icon" />
+
+        <EditText
+            android:id="@+id/title_search"
+            style="@style/style_gray_12"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_search_bar"
+            android:drawableRight="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/ten_dp_margin"
+            android:hint="@string/search_hint" />
+
+    </LinearLayout>
+
+    <View style="@style/style_seperator_line_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/good_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/good_tab_label"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/good_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blue_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/brand_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/brand_tab_label"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/brand_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blue_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.submeter.android.view.ViewPagerSlide
+        android:id="@+id/viewPages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</com.submeter.android.view.MyLinearLayout>

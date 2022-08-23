@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_icon"
+    >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/statusbar_view"
+        android:layout_marginLeft="@dimen/five_dp_margin"
+        android:scaleType="centerInside"
+        android:src="@mipmap/return_ho" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eighty_dp_margin"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="廊坊市生态环境局固安县分局"
+            android:gravity="center"
+            style="@style/style_ffffff_25"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工业企业分表计电信息化智能系统"
+            android:gravity="center_horizontal"
+            style="@style/style_ffffff_20"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/account"
+            android:hint="@string/signin_account_hint"
+            style="@style/style_register_edit"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/yhm_icon"
+            />
+
+        <com.submeter.android.view.DrawableEditText
+            android:id="@+id/password"
+            style="@style/style_register_edit"
+            android:hint="@string/password_hint"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@mipmap/mm_icon"
+            android:drawableRight="@mipmap/psd_show"
+            />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_label"
+            android:gravity="center"
+            android:background="@color/white_color"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            style="@style/style_blue_15"/>
+    </LinearLayout>
+
+</RelativeLayout>

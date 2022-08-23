@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:BannerView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.submeter.android.view.BannerView
+        android:id="@+id/category_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        BannerView:auto_play="true"
+        BannerView:indicator_checked="@drawable/select_banner_dot"
+        BannerView:indicator_normal="@drawable/unselect_banner_dot"
+        BannerView:interval="2000">
+
+    </com.submeter.android.view.BannerView>
+
+</LinearLayout>

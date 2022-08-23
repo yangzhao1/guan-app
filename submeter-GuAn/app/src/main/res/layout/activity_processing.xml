@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/info_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white_color"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white_color"
+                    >
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/style_black_22"
+                        android:text="林强制管厂"/>
+
+                    <TextView
+                        android:id="@+id/navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/style_blue_15"
+                        android:text="导航"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:drawableLeft="@mipmap/arrow_blue_icon"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:drawableLeft="@mipmap/dt_icon"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="河北省廊坊市霸州市金堂道北50米"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:text="联系人: 冯建伟"
+                    android:layout_marginTop="@dimen/dp_10"/>
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:text="联系电话: 15389459838"
+                    android:layout_marginTop="@dimen/dp_10"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/gray_d8d8d8_color">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white_color"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="周累计处理次数:  28次"/>
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:text="月累计处理次数:  97次"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/gray_d8d8d8_color">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:background="@color/white_color"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="是否违规: "/>
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <RadioButton
+                        android:id="@+id/unOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未违规"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/outed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已违规"
+                        android:layout_marginLeft="@dimen/dp_10"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:background="@color/white_color"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="处理原因: "/>
+
+                <EditText
+                    android:id="@+id/cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:text=""
+                    android:hint="请输入处理原因"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white_color"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="处理措施: "/>
+
+                <EditText
+                    android:id="@+id/measure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:text=""
+                    android:hint="请输入处理措施"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white_color"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="扣除分数: "/>
+
+                <EditText
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/style_gray_16"
+                    android:text=""
+                    android:inputType="numberDecimal"
+                    android:hint="请输入扣除分数"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="分"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white_color"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:gravity="center_vertical"
+                    android:text="处理详情: "/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_gray_16"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:hint="停产整改"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_margin="10dp"
+                android:gravity="left|top"
+                android:padding="5dp"
+                android:background="@drawable/blue_corner_10_bg"
+                android:hint="请填写详情处理"/>
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="提交"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="@color/white_color"
+                android:background="@color/blue_color"
+                android:layout_below="@+id/info_lin"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

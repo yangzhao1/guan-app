@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap_vertical"
+    android:background="@color/white_color">
+
+    <TextView
+        android:id="@+id/tv_common_filter_title"
+        style="@style/style_common_filter_title" />
+
+    <View style="@style/style_invitation_details_divider" />
+
+    <LinearLayout style="@style/style_common_filter_select_date_layout"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <EditText
+            android:id="@+id/et_common_item_min_price"
+            style="@style/style_common_filter_select_date"
+            android:inputType="number"
+            android:hint="最低价" />
+
+        <View style="@style/style_common_filter_select_date_divider" />
+
+        <EditText
+            android:id="@+id/et_common_item_max_price"
+            style="@style/style_common_filter_select_date"
+            android:inputType="number"
+            android:hint="最高价" />
+    </LinearLayout>
+
+</LinearLayout>

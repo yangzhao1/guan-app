@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap">
+
+    <LinearLayout style="@style/style_invitation_list_item_layout">
+
+        <View
+            android:id="@+id/v_invitation_list_item_color"
+            style="@style/style_invitation_list_item_status_bg" />
+
+        <LinearLayout style="@style/match_wrap_horizontal">
+
+            <LinearLayout style="@style/style_invitation_list_item_content">
+
+                <TextView
+                    android:id="@+id/tv_invitation_list_title"
+                    style="@style/style_invitation_list_item_title" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_list_company_name"
+                    style="@style/style_invitation_list_item" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_list_address"
+                    style="@style/style_invitation_list_item" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_list_end_time"
+                    style="@style/style_invitation_list_item" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_invitation_status"
+                style="@style/style_invitation_list_item_status" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

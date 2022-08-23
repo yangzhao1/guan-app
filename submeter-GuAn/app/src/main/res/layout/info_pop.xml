@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/info_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical"
+            android:background="@color/white_color"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_black_22"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_black_18"
+                android:drawableLeft="@mipmap/dt_icon"
+                android:drawablePadding="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/serialNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/linkman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/warnLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:drawableLeft="@mipmap/yj_icon"
+                android:drawablePadding="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/companyLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_gray_16"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_4"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="查看详情"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:background="@color/blue_color"
+            android:layout_below="@+id/info_lin"/>
+
+        <TextView
+            android:id="@+id/navigation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="导航"
+            android:drawableTop="@mipmap/arrow"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white_color"
+            android:background="@drawable/select_banner_dot"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

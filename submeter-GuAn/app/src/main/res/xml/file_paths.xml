@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <root-path
+            name="rootCacheFileDownload"
+            path="" />
+        <!--对应系统内存所在应用的根目录的路径，path为自己创建目录的层级，name为自定义不可重复-->
+        <cache-path
+            name="cacheFileDownload"
+            path="ouralt/" />
+        <!--对应内存卡的存储路径，path为自己创建目录的层级，name为自定义不可重复-->
+        <external-cache-path
+            name="externalCacheFileDownload"
+            path="ouralt/" />
+    </paths>
+</resources>

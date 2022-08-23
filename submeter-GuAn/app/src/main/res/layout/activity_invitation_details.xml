@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.submeter.android.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_invitation_details"
+    style="@style/match_match_vertical"
+    android:background="@color/invitation_bg">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/match_match_vertical"
+            android:background="@color/white_color">
+
+            <TextView
+                android:id="@+id/tv_invitation_details_title"
+                style="@style/style_invitation_details_title"
+                android:text="2019-2020年蓝光材料设备集团全国区域|精装木地板|战略合作伙伴招标公告" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_invitation_details_time"-->
+                <!--style="@style/style_invitation_details_time"-->
+                <!--android:text="2018-11-11 13:13:13" />-->
+
+            <View style="@style/style_invitation_details_divider" />
+
+            <LinearLayout
+                style="@style/style_invitation_details_item"
+                android:layout_marginTop="@dimen/twenty_dp_margin"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    style="@style/style_invitation_details_label"
+                    android:text="招标单位" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_details_company_name"
+                    style="@style/style_invitation_details_content"
+                    android:text="蓝光材料设备集团" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_invitation_details_item"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    style="@style/style_invitation_details_label"
+                    android:text="报名时间" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_details_date"
+                    style="@style/style_invitation_details_content"
+                    android:text="2018/10/31 - 2018/12/15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_invitation_details_item"
+                android:layout_marginBottom="@dimen/thirteen_dp_margin">
+
+                <TextView
+                    style="@style/style_invitation_details_label"
+                    android:gravity="center_vertical"
+                    android:text="项目地点" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_details_address"
+                    style="@style/style_invitation_details_address"
+                    android:text="全国范围" />
+
+                <Button
+                    android:id="@+id/btn_invitation_details_download"
+                    style="@style/style_invitation_details_download"
+                    android:text="下载文件" />
+
+            </LinearLayout>
+
+            <View style="@style/style_invitation_details_divider" />
+
+            <LinearLayout
+                style="@style/style_invitation_details_item"
+                android:layout_marginTop="@dimen/twenty_dp_margin"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    style="@style/style_invitation_details_label"
+                    android:text="联系人" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_details_contarct_name"
+                    style="@style/style_invitation_details_content"
+                    android:text="张勤" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_invitation_details_item">
+
+                <TextView
+                    style="@style/style_invitation_details_label"
+                    android:text="联系电话" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_details_phone"
+                    style="@style/style_invitation_details_content"
+                    android:text="13012345678" />
+
+            </LinearLayout>
+
+            <View style="@style/style_invitation_details_divider" />
+
+            <WebView
+                android:id="@+id/webview"
+                style="@style/style_invitation_details_text_content" />
+
+            <Button
+                android:id="@+id/btn_invitation_details_apply"
+                style="@style/style_invitation_details_apply"
+                android:text="报名" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</com.submeter.android.view.MyLinearLayout>

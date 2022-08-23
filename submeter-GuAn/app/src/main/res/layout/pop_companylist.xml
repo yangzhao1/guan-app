@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/alt_sy_icon_fanhui2x"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:src="@mipmap/return_icon" />
+
+            <EditText
+                android:id="@+id/title_search"
+                style="@style/style_gray_12"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_home_search_bar2"
+                android:drawableRight="@mipmap/alt_sy_icon_gb2x"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:imeOptions="actionSearch"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingRight="@dimen/ten_dp_margin"
+                android:hint="@string/search_hint" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_d8d8d8_color">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,209 @@
+<resources>
+
+    <string name="app_name">廊坊市生态环境局固安县分局工业企业分表计电信息化智能系统</string>
+    <string name="loading">加载中...</string>
+    <string name="skip">跳过</string>
+    <string name="network_error">加载出错了</string>
+    <string name="network_inner_error">哦！一不小心走丢了。</string>
+    <string name="refresh_last">%s刷新</string>
+    <string name="share_more">更多</string>
+    <string name="share_wx">微信</string>
+    <string name="share_sina">新浪</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_wx_circle">朋友圈</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="exit_toast">再按一次退出%s</string>
+    <string name="common_null_content_hint">%s走丢了啦，请稍后重试！</string>
+    <string name="day_label">天</string>
+    <string name="hour_label">时</string>
+    <string name="minute_label">分</string>
+    <string name="second_label">秒</string>
+    <string name="time_year_month_day_HH_mm">yyyy.MM.dd HH:mm</string>
+    <string name="unknown_data_error">数据出错了哦！</string>
+    <!--大城县经纬度-->
+    <string name="lat">39.53</string>
+    <string name="lon">116.72</string>
+    <string name="myinfo">个人信息</string>
+    <string name="scan">扫一扫</string>
+
+    <!-- welcome -->
+    <string name="into_app">立即使用</string>
+
+    <!-- APP底部的分类 -->
+    <string name="home_tab">首页</string>
+    <string name="category_tab">设备监控</string>
+    <string name="message_tab">消息</string>
+    <string name="me_tab">我的</string>
+
+    <!-- home -->
+    <string name="search_hint">请输入关键词搜索</string>
+    <string name="invitation_label">招投标</string>
+    <string name="group_purchase_label">团购</string>
+    <string name="brand_label">合作品牌</string>
+    <string name="mall_label">商城</string>
+    <string name="news_label">最新</string>
+    <string name="self_support_label">自营</string>
+    <string name="joint_support_label">联营</string>
+    <string name="match_support_label">撮合</string>
+    <string name="hot_activity_label">热门活动</string>
+    <string name="promption_brand_label">推荐品牌</string>
+    <string name="promption_commodity_label">推荐商品</string>
+    <string name="more_label">更多</string>
+    <string name="mall_price_template">商城价：%s</string>
+    <string name="contract_price_template">合约价：%s</string>
+    <string name="price_unlogin_label">登入可见</string>
+    <string name="price_uncontact_label">项目签约可见</string>
+    <string name="view_category">点击进入更多分类</string>
+    <string name="enter_topic">进入专场</string>
+    <string name="activity_end">活动已结束</string>
+
+
+    <!-- category -->
+    <string name="good_tab_label">商品</string>
+    <string name="brand_tab_label">品牌</string>
+    <string name="commodity_category_label">商品分类</string>
+
+    <!-- me -->
+    <string name="me_signin_label">请登录</string>
+    <string name="me_deal_label">我的订单</string>
+    <string name="all_deal_label">全部订单</string>
+    <string name="unpay_deal_label">待付款</string>
+    <string name="wait_check_deal_label">待收货</string>
+    <string name="wait_comment_label">评价</string>
+    <string name="shopping_cart_label">购物车</string>
+    <string name="contract">合同下单</string>
+
+    <string name="application_label">我的报名</string>
+    <string name="group_application_label">团购报名</string>
+    <string name="gather_application_label">集采报名</string>
+    <string name="settle_account">结算中心</string>
+    <string name="settle_account_with_bill">发货单结算</string>
+    <string name="settle_account_with_contract">合同结算</string>
+
+    <!-- upgrade -->
+    <string name="upgrade_content_label">该更新了</string>
+
+    <!-- sign in -->
+    <string name="signin_phone_hint">请输入手机号</string>
+    <string name="get_activity_code_label">获取验证码</string>
+    <string name="signin_account_hint">请输入用户名</string>
+    <string name="signin_psd_hint">请输入密码</string>
+    <string name="register_terms_label">我同意《蓝光阿拉汀注册协议》</string>
+    <string name="no_account_label">马上注册</string>
+    <string name="forget_psd_label">忘记密码</string>
+    <string name="login_label">登录</string>
+    <string name="login_finish">登录成功</string>
+    <string name="copyright">COPYRIGHT©蓝光阿拉汀建材集采平台</string>
+
+    <!-- register -->
+    <string name="sp_label">服务商</string>
+    <string name="buyer_label">采购商</string>
+    <string name="supplier_label">供应商</string>
+    <string name="account_hint">请输入用户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="confirm_psd_hint">请再输一次确认密码</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="get_active_code">获取验证码</string>
+    <string name="active_code_hint">请输入验证码</string>
+    <string name="register_btn">注册</string>
+    <string name="invalidate_phone">请输入有效的手机号</string>
+    <string name="invalidate_account">请输入4-20未有效的用户名</string>
+    <string name="invalidate_password">请输入有效的密码</string>
+    <string name="thesame_password">两次输入密码不一致</string>
+    <string name="invalidate_active_code">请输入有效的验证码</string>
+    <string name="active_code_has_send">验证码已发送</string>
+    <string name="active_code_send_failure">验证码发送失败</string>
+    <string name="register_failure">注册失败了，请稍后重试</string>
+    <string name="register_finish">注册成功</string>
+    <string name="register_get_active_disable">%ds</string>
+
+    <!-- forget password -->
+    <string name="next_step">下一步</string>
+    <string name="send_active_code_hint_text">我们已将验证码发送到您的手机\n%s</string>
+
+    <!-- notification setting -->
+    <string name="open_notification_title">开启消息通知</string>
+    <string name="open_notification_sub_title">让您第一时间获得重要信息</string>
+    <string name="open_notification_reason">不错过任何一次大优惠</string>
+    <string name="open_notification">立即开启</string>
+
+    <!-- 招投标-->
+    <string name="label_invitation_company_name">招标单位：%1$s</string>
+    <string name="label_invitation_address">项目地点：%1$s</string>
+    <string name="label_invitation_end_date">报名截止时间：%1$s</string>
+    <string name="label_invitation_no_date">暂无</string>
+    <string name="label_invitation_details_date">%1$s - %2$s</string>
+    <string name="label_invitation_details_downloading">正在下载</string>
+    <string name="label_invitation_details_download_error">文件可能已经丢失，请稍后再试</string>
+    <string name="label_invitation_filter_status">招标阶段</string>
+    <string name="label_invitation_filter_date">招标时间</string>
+    <string name="label_invitation_filter_category">采购类型</string>
+    <string name="label_invitation_filter_ok">确定</string>
+    <string name="label_invitation_filter_cancel">取消</string>
+    <string name="label_invitation_filter_date_error">结束日期需要大于开始日期</string>
+    <string name="label_invitation_title">招标公告</string>
+
+    <!--商城列表-->
+    <string name="label_commodity_list_unlogin_price">￥登入可见</string>
+    <string name="label_commodity_list_login_price">￥%1$s</string>
+    <string name="label_commodity_list_sales">销量%1$s件</string>
+    <string name="label_commodity_filter_category">采购分类</string>
+    <string name="label_commodity_filter_price">价格区间</string>
+    <!-- 搜索 -->
+    <string name="search_history_label">搜索历史</string>
+    <string name="search_history_null_label">还没有搜索历史</string>
+
+    <!--商品详情-->
+    <string name="cs_label">客服</string>
+    <string name="shop_label">店铺</string>
+    <string name="follow_label">关注</string>
+    <string name="following_label">已关注</string>
+    <string name="add_shoppingcart_label">加入购物车</string>
+    <string name="buy_label">立即购买</string>
+
+    <!--企业详情-->
+    <string name="company_info">企业详情</string>
+    <string name="history">历史数据</string>
+    <string name="company_getOut_info">企业违规详情</string>
+    <string name="company_facility_info">设备运行记录</string>
+    <string name="company_getOut_processing">企业违规处理</string>
+    <string name="change_ps">修改密码</string>
+    <string name="message_info">详情</string>
+
+    <!--问题处理-->
+    <string name="handling_problem">处理问题</string>
+
+    <string name="gaode_map">高德地图</string>
+    <string name="baidu_map">百度地图</string>
+    <string name="tengxun_map">腾讯地图</string>
+    <string name="gaode_uninstall">尚未安装高德地图</string>
+    <string name="baidu_uninstall">尚未安装百度地图</string>
+    <string name="tengxun_uninstall">尚未安装腾讯地图</string>
+    
+    <string name="system_msg">系统消息</string>
+    <string name="warning_msg">预警消息</string>
+    <string name="dispose_msg">处理消息</string>
+    <string name="see_info">查看详情</string>
+    <string name="notice">通知公告</string>
+    <string name="company_list">企业列表</string>
+    <string name="city_statistics">乡镇维度统计</string>
+    <string name="dispose">企业处理详细</string>
+    <string name="monitor">设备监控</string>
+    <string name="linkman">联系人: </string>
+    <string name="phone">联系电话: </string>
+    <string name="score">环保信用: </string>
+    <string name="week_vio">周累计处理次数: </string>
+    <string name="month_vio">月累计处理次数: </string>
+    <string name="company_num">企业编号: </string>
+    <string name="response_level">响应级别: </string>
+    <string name="company_level">企业等级: </string>
+    <string name="business_type">行业分类: </string>
+    <string name="label_all">全部</string>
+    <string name="label_normal">正常</string>
+    <string name="label_abnormal">报警</string>
+    <string name="label_stop">违规</string>
+    <string name="label_copyright">© [2019-2025] by [xunpengkeji]</string>
+    <string name="label_aboutus">关于我们</string>
+
+</resources>

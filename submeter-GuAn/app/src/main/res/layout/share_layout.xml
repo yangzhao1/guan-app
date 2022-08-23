@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/twenty_dp_margin"
+        android:paddingTop="@dimen/twenty_dp_margin">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/wx_button"
+            style="@style/style_black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/ten_dp_margin"
+            android:drawableTop="@mipmap/weixin"
+            android:gravity="center_horizontal"
+            android:text="@string/share_wx" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/wx_circle_button"
+            style="@style/style_black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/ten_dp_margin"
+            android:drawableTop="@mipmap/penyouquan"
+            android:gravity="center_horizontal"
+            android:text="@string/share_wx_circle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/qq_friend_button"
+            style="@style/style_black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/ten_dp_margin"
+            android:drawableTop="@mipmap/qq"
+            android:gravity="center_horizontal"
+            android:text="@string/share_qq" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/sina_button"
+            style="@style/style_black_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/ten_dp_margin"
+            android:drawableTop="@mipmap/weibo"
+            android:gravity="center_horizontal"
+            android:text="@string/share_sina" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View style="@style/style_seperator_line_h" />
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        style="@style/style_black_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_six_dp_margin"
+        android:gravity="center"
+        android:text="@string/dialog_cancel" />
+
+</LinearLayout>

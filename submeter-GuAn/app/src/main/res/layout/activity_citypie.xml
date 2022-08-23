@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/title_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white_trans_50">
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:padding="@dimen/dp_10"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <com.teaanddogdog.mpandroidchartutil.PieChartFixCover
+                android:id="@+id/pieChartEnt"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:mp_chart_out_value_place_mode="AVG"
+                app:mp_chart_auto_adapt_text_size="true"
+                />
+            <com.teaanddogdog.mpandroidchartutil.PieChartFixCover
+                android:id="@+id/pieChartMeter"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:mp_chart_out_value_place_mode="AVG"
+                app:mp_chart_auto_adapt_text_size="true"
+                />
+            <com.teaanddogdog.mpandroidchartutil.PieChartFixCover
+                android:id="@+id/pieChartViolationMonth"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:mp_chart_out_value_place_mode="AVG"
+                app:mp_chart_auto_adapt_text_size="true"
+                />
+            <com.teaanddogdog.mpandroidchartutil.PieChartFixCover
+                android:id="@+id/pieChartViolation"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:mp_chart_out_value_place_mode="AVG"
+                app:mp_chart_auto_adapt_text_size="true"
+                />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!---->
+            <!---->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!---->
+            <!---->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </ScrollView>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/pieLin"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

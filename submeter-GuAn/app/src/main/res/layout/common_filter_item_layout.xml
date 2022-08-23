@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap_vertical">
+    <CheckBox
+        android:id="@+id/cb_common_item"
+        style="@style/style_common_filter_list_item">
+    </CheckBox>
+</LinearLayout>

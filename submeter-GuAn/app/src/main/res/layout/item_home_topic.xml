@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/style_home_topic"
+    android:background="@drawable/bg_home_topic_one">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/topic_image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        fresco:roundedCornerRadius="5dip"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/no_login"
+        fresco:placeholderImageScaleType="centerCrop" />
+
+</LinearLayout>

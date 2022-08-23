@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statusbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/forty_six_dp_margin">
+
+        <LinearLayout
+            android:id="@+id/left_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten_dp_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/left_text"
+                style="@style/style_red_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ten_dp_margin"
+                android:paddingRight="@dimen/ten_dp_margin" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/style_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/fifty_dp_margin"
+            android:layout_marginRight="@dimen/fifty_dp_margin"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/title_search"
+            style="@style/style_gray_12"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/thirty_dp_margin"
+            android:layout_marginLeft="@dimen/thirty_dp_margin"
+            android:layout_marginRight="@dimen/thirty_dp_margin"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_search_bar"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="@dimen/ten_dp_margin"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/ten_dp_margin"
+            android:paddingRight="@dimen/ten_dp_margin"
+            android:hint="@string/search_hint"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/right_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/ten_dp_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/right_text"
+                style="@style/style_ffffff_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ten_dp_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_toolbar_divider" />
+</LinearLayout>

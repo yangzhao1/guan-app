@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.submeter.android.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match_vertical"
+    android:clickable="true"
+    android:background="@color/invitation_bg">
+
+    <View
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twenty_dp_margin"/>
+
+    <include
+        android:id="@+id/ll_commodity_categroy"
+        layout="@layout/common_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/ll_commodity_price"
+        layout="@layout/common_filter_select_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        style="@style/match_match_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white_color"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_common_reset"
+            style="@style/style_invitation_filter_reset"
+            android:text="重置" />
+
+        <Button
+            android:id="@+id/btn_common_ok"
+            style="@style/style_invitation_filter_ok"
+            android:text="确定" />
+    </LinearLayout>
+
+</com.submeter.android.view.MyLinearLayout>

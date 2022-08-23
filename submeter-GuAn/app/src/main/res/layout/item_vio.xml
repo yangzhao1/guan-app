@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white_color"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/style_gray_16"
+                android:gravity="center"
+                android:text="1"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                style="@style/style_gray_16"
+                android:gravity="center"
+                android:text="2019-3-20 10:25:23 "/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                style="@style/style_gray_16"
+                android:gravity="center"
+                android:lines="2"
+                android:ellipsize="end"
+                android:text="未开始开始治理污水未开始治理污水未开始治理污水未开始治理污水未开始治理污水"/>
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                style="@style/style_gray_16"
+                android:gravity="center"
+                android:textColor="@color/title_color"
+                android:text="立即处理"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

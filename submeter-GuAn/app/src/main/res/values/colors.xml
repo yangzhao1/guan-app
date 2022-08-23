@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="title_color">#32AFFF</color>
+    <color name="view_page_background">#FFFFFF</color>
+    <color name="gray_view_page_background">#F4F4F4</color>
+    <color name="black_color">#333333</color>
+    <color name="blue_color">#32AFFF</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="reds_color">#f74747</color>
+    <color name="org_color">#f16735</color>
+    <color name="greens_color">#539b20</color>
+    <color name="greenss_color">#0d944c</color>
+    <color name="greensss_color">#0d8794</color>
+    <color name="topic_one_color">#FEECEC</color>
+    <color name="topic_two_color">#FFF4E6</color>
+    <color name="topic_three_color">#F7FFE8</color>
+    <color name="home_promption_product_label_color">#F4F4F4</color>
+    <color name="home_promption_brand_label_color">#FBF2E3</color>
+    <color name="main_tab_normal_color">#888888</color>
+    <color name="main_tab_selected_color">#32AFFF</color>
+    <color name="login_edit_bg">#F4F6F8</color>
+    <color name="real_black_color">#000000</color>
+    <color name="red_color">#FF0000</color>
+    <color name="banner_selected_color">#509DFB</color>
+    <color name="gray_color">#888888</color>
+    <color name="bottom_bar_background">#F7F7F7</color>
+    <color name="category_grid_bg">#F7F7F7</color>
+    <color name="yellow_color">#FF9900</color>
+    <string-array name="type_array">
+        <item>全部</item>
+        <item>总表</item>
+        <item>生产设备</item>
+        <item>环保设备</item>
+    </string-array>
+    <string-array name="state_type_array">
+        <item>合并统计</item>
+        <item>各自统计</item>
+    </string-array>
+    <color name="home_label_normal_color">#BFBFBF</color>
+
+
+    <color name="gray_444444_color">#444444</color>
+
+
+
+
+    <color name="item_cell_background">#FFFFFF</color>
+    <color name="title_sep_line_color">#DBDBDB</color>
+
+    <color name="black_222222_color">#222222</color>
+
+    <color name="gray_9C9C9C_color">#9C9C9C</color>
+    <color name="gray_999999_color">#999999</color>
+
+    <color name="gray_666666_color">#666666</color>
+    <color name="gray_6A6A6A_color">#6A6A6A</color>
+    <color name="gray_565656_color">#565656</color>
+    <color name="gray_525252_color">#525252</color>
+    <color name="gray_7A7A7A_color">#7A7A7A</color>
+    <color name="label_color">#929292</color>
+    <color name="hint_color">#C4C4C4</color>
+
+    <color name="full_trans_white_color">#00FFFFFF</color>
+    <color name="white_trans_color">#66FFFFFF</color>
+    <color name="white_trans66_color">#A6FFFFFF</color>
+    <color name="white_trans_50">#7FFFFFFF</color>
+    <color name="white_trans_60">#99FFFFFF</color>
+    <color name="white_trans_80">#CCFFFFFF</color>
+    <color name="gray_d8d8d8_color">#F2F2F2</color>
+
+    <color name="black_transparent_20">#33000000</color>
+    <color name="black_transparent_22">#38000000</color>
+    <color name="black_transparent_35">#59000000</color>
+    <color name="black_transparent_40">#66000000</color>
+    <color name="black_transparent_50">#7F000000</color>
+    <color name="black_transparent_60">#99000000</color>
+    <color name="black_transparent_70">#B3000000</color>
+    <color name="black_transparent_90">#E6000000</color>
+    <color name="black_transparent_100">#FF000000</color>
+
+    <!--<color name="user_info_transparent_35">#59B1ABAC</color>
+    <color name="user_info_transparent">#00B1ABAC</color>-->
+    <color name="user_info_transparent_35">#59000000</color>
+    <color name="user_info_transparent">#00000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="item_category_bg">#F6F6F6</color>
+    <color name="item_keyword_bg">#F1F1F1</color>
+    <color name="view_sep_line_color">#EBEBEB</color>
+    <color name="show_preview_order_sep_line_color">#D5D5D5</color>
+
+    <color name="list_sep_background">#E7E7E7</color>
+    <color name="item_answer_bg">#FFF5F7</color>
+    <color name="apply_disable_color">#A4A4A4</color>
+    <color name="input_bg">#F2F5F6</color>
+
+
+    <color name="bottom_bar_normal_background">#888888</color>
+    <color name="bottom_bar_selected_background">#222222</color>
+    <color name="bg_black_color">#000000</color>
+    <color name="color_btn_cancel_blur">#C2C2C2</color>
+    <color name="color_btn_cancel">#C3C3C3</color>
+    <color name="color_btn_ok_blur">#C1272D</color>
+    <color name="color_btn_ok">#C1272D</color>
+    <color name="event_option_disable_color">#B8B8B8</color>
+
+    <color name="dim_color">#CC000000</color>
+    <color name="dim_color2">#20000000</color>
+
+    <color name="green_color">#28A018</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="login_hint_color">#ADADAD</color>
+    <color name="login_input_line_color">#6B6B6B</color>
+    <color name="login_disable_color">#34FFFFFF</color>
+
+    <!--<color name="invitation_start">#888888</color>-->
+    <color name="invitation_loading">#509dfb</color>
+    <!--<color name="invitation_review">#ffba82</color>-->
+    <!--<color name="invitation_end">#72d2a4</color>-->
+    <color name="invitation_bg">#f4f4f4</color>
+    <color name="invitation_label">#333333</color>
+    <color name="invitation_content">#888888</color>
+    <color name="invitation_divider">#e7e7e7</color>
+    <color name="invitation_list_title_select">#339dfb</color>
+    <color name="common_select_date_divider">#cccccc</color>
+
+</resources>

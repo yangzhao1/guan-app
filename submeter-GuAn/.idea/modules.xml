@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="submeter-GuAn/app" />
+      <module fileurl="file://$PROJECT_DIR$/hybridcache/hybridcache.iml" filepath="$PROJECT_DIR$/hybridcache/hybridcache.iml" group="submeter-GuAn/hybridcache" />
+      <module fileurl="file://$PROJECT_DIR$/hybridcache-fresco/hybridcache-fresco.iml" filepath="$PROJECT_DIR$/hybridcache-fresco/hybridcache-fresco.iml" group="submeter-GuAn/hybridcache-fresco" />
+      <module fileurl="file://$PROJECT_DIR$/submeter-GuAn.iml" filepath="$PROJECT_DIR$/submeter-GuAn.iml" group="submeter-GuAn" />
+      <module fileurl="file://$PROJECT_DIR$/swipebacklib/swipebacklib.iml" filepath="$PROJECT_DIR$/swipebacklib/swipebacklib.iml" group="submeter-GuAn/swipebacklib" />
+    </modules>
+  </component>
+</project>

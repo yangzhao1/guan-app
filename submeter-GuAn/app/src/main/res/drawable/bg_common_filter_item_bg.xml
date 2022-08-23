@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white_color" />
+            <stroke android:width="@dimen/one_dp_margin" android:color="@color/invitation_list_title_select" />
+            <corners android:radius="@dimen/three_dp_margin" />
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white_color" />
+            <stroke android:width="@dimen/one_dp_margin" android:color="@color/invitation_list_title_select" />
+            <corners android:radius="@dimen/three_dp_margin" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white_color" />
+            <stroke android:width="@dimen/one_dp_margin" android:color="@color/invitation_list_title_select" />
+            <corners android:radius="@dimen/three_dp_margin" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/invitation_bg" />
+            <corners android:radius="@dimen/three_dp_margin" />
+        </shape>
+    </item>
+</selector>

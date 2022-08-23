@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white_color"
+        android:layout_marginTop="@dimen/five_dp_margin"
+        android:layout_marginLeft="@dimen/five_dp_margin"
+        android:layout_marginRight="@dimen/five_dp_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                style="@style/style_black_18"/>
+            <TextView
+                android:id="@+id/titleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdadsdda"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/white_color"
+                style="@style/style_black_12"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp_margin"
+            android:background="@color/gray_d8d8d8_color"
+            android:layout_marginTop="@dimen/dp_4"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:drawableLeft="@mipmap/contacts"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    style="@style/style_gray_16"/>
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:drawableLeft="@mipmap/telephone"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    style="@style/style_gray_16"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/goPhone"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/gophone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="上1小时用电量"
+                    />
+
+                <TextView
+                    android:id="@+id/hourPow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="2"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_view_page_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="昨天用电量"
+                    />
+
+                <TextView
+                    android:id="@+id/yestodayPow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="3"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_view_page_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="月平均用电量"
+                    />
+
+                <TextView
+                    android:id="@+id/monthPow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/style_black_15"
+                    android:gravity="center"
+                    android:text="4"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

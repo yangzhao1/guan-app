@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:gravity="bottom"
+    >
+    <TextView
+        android:id="@+id/text_pop"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white_color"
+            android:padding="15dp"
+            >
+            <TextView
+                android:id="@+id/gaoDeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/gd_icon"
+                style="@style/style_black_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:drawablePadding="@dimen/fifteen_dp_margin"
+                android:text="@string/gaode_map"/>
+            <TextView
+                android:id="@+id/baiDuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/fifteen_dp_margin"
+                android:text="@string/baidu_map"
+                style="@style/style_black_15"
+
+                android:layout_marginLeft="@dimen/twenty_dp_margin"
+                android:drawableTop="@mipmap/bd_icon"/>
+
+            <TextView
+                android:id="@+id/tengxunText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/fifteen_dp_margin"
+                android:text="@string/tengxun_map"
+                style="@style/style_black_15"
+
+                android:layout_marginLeft="@dimen/twenty_dp_margin"
+                android:drawableTop="@mipmap/tx_map"/>
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8_color"></View>
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:background="@color/white_color"
+            android:layout_below="@+id/info_lin"/>
+
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_view_page_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_color"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/statusbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/forty_six_dp_margin">
+
+            <TextView
+                android:id="@+id/text_title"
+                style="@style/style_title_text"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/me_tab"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/setting_image"
+                android:layout_width="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="46dp"
+                android:src="@mipmap/setting"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/title_sep_line"
+            style="@style/style_seperator_line_h"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/view_page_background"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/me_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/headicon_view"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/default_headicon"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundWithOverlayColor="@color/transparent"
+                fresco:roundingBorderColor="@color/view_sep_line_color"
+                fresco:roundingBorderWidth="0.5dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_mid_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_view"
+                    style="@style/style_ffffff_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/tag_view"
+                    style="@style/style_black_14"
+                    android:background="@mipmap/vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/signin_btn"
+                    style="@style/style_ffffff_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/vip"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/me_signin_label" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_black_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/me_deal_label" />
+
+            <TextView
+                style="@style/style_gray_12"
+                android:id="@+id/all_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_deal_label" />
+
+        </LinearLayout>
+
+        <View style="@style/style_seperator_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/unpay_deal"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/pay"
+                android:text="@string/unpay_deal_label" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wait_check_deal"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/wait_accept"
+                android:text="@string/wait_check_deal_label" />
+
+            <View style="@style/style_h_blank_view" />
+
+            <TextView
+                android:id="@+id/wait_comment"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/comment"
+                android:text="@string/wait_comment_label" />
+
+            <View style="@style/style_h_blank_view" />
+
+            <TextView
+                android:id="@+id/shopping_cart"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/shoppingcart"
+                android:text="@string/shopping_cart_label" />
+
+            <View
+                android:id="@+id/contract_blank_view"
+                android:visibility="gone"
+                style="@style/style_h_blank_view" />
+
+            <TextView
+                android:id="@+id/contract"
+                style="@style/style_me_order_item"
+                android:visibility="gone"
+                android:drawableTop="@mipmap/book_contract"
+                android:text="@string/contract" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/style_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/application_label" />
+
+        <View style="@style/style_seperator_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/group_application"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/group_apply"
+                android:text="@string/group_application_label" />
+
+            <View
+                style="@style/style_h_blank_view"/>
+
+            <TextView
+                android:id="@+id/gather_application"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/jicai"
+                android:text="@string/gather_application_label" />
+
+            <View style="@style/style_h_blank_view" />
+
+            <TextView
+                style="@style/style_me_order_item"
+                android:visibility="invisible" />
+
+            <View style="@style/style_h_blank_view" />
+
+            <TextView
+                style="@style/style_me_order_item"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/last_apply_blank_view"
+                android:visibility="gone"
+                style="@style/style_h_blank_view" />
+
+            <TextView
+                android:id="@+id/last_disable_apply_view"
+                style="@style/style_me_order_item"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/style_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/settle_account" />
+
+        <View style="@style/style_seperator_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/settle_account_with_bill"
+                style="@style/style_me_order_item"
+                android:drawableTop="@mipmap/contract"
+                android:text="@string/settle_account_with_bill" />
+
+            <TextView
+                android:id="@+id/settle_account_with_contract"
+                style="@style/style_me_order_item"
+                android:layout_marginLeft="40dp"
+                android:drawableTop="@mipmap/contract"
+                android:text="@string/settle_account_with_contract" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

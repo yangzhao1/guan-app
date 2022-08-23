@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:BannerView="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <com.submeter.android.view.BannerView
+            android:id="@+id/banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            BannerView:auto_play="true"
+            BannerView:indicator_checked="@drawable/select_banner_dot"
+            BannerView:indicator_normal="@drawable/unselect_banner_dot"
+            BannerView:interval="2000"></com.submeter.android.view.BannerView>
+
+        <LinearLayout
+            android:id="@+id/head_searchbar_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/bid_view"
+            style="@style/style_home_business_category"
+            android:drawableTop="@mipmap/invitation"
+            android:text="@string/invitation_label" />
+
+        <TextView
+            android:id="@+id/mall_view"
+            style="@style/style_home_business_category"
+            android:drawableTop="@mipmap/gb"
+            android:text="@string/mall_label" />
+
+        <TextView
+            android:id="@+id/group_purchase_view"
+            style="@style/style_home_business_category"
+            android:drawableTop="@mipmap/group"
+            android:text="@string/group_purchase_label" />
+
+        <TextView
+            android:id="@+id/brand_view"
+            style="@style/style_home_business_category"
+            android:drawableTop="@mipmap/brand"
+            android:text="@string/brand_label" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/invitation_news" />
+
+        <com.submeter.android.view.UPMarqueeView
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1">
+
+        </com.submeter.android.view.UPMarqueeView>
+
+        <TextView
+            android:id="@+id/more_invitation_view"
+            style="@style/gray_888888_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:drawableRight="@mipmap/arrow_icon"
+            android:gravity="center_vertical"
+            android:text="@string/share_more" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_home_topic_sepline" />
+
+    <LinearLayout
+        android:id="@+id/topics_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_view_page_background" />
+
+    <include
+        layout="@layout/item_home_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/hot_activity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <include
+            android:id="@+id/l_activity"
+            layout="@layout/item_home_hot_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/rt_activity"
+                layout="@layout/item_home_hot_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/rb_activity"
+                layout="@layout/item_home_hot_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_view_page_background" />
+
+</LinearLayout>
